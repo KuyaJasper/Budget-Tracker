@@ -12,6 +12,8 @@ const FILES_TO_CACHE = [
 const CACHE_NAME = "static-cache-v1";
 const DATA_CACHE_NAME = "data-cache-v1";
 
+//Install
+
 self.addEventListener('install', event => {
     event.waitUntil(
       caches.open(CACHE_NAME).then((cache) => cache.addAll(FILES_TO_CACHE))
@@ -20,3 +22,14 @@ self.addEventListener('install', event => {
     self.skipWaiting();
   });
   
+
+// Activate 
+
+
+self.addEventListener('activate',);
+
+
+//Fetch
+
+self.addEventListener('fetch',);
+
